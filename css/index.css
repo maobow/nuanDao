@@ -1,0 +1,44 @@
+nav{
+	z-index: 99;
+}
+
+#picRound{
+	height: 400px;
+	width: 100%;
+	/*background-color: #E396FF;*/
+}
+
+#top{
+	position: fixed;
+	right: 0;
+	top: 90%;
+}
+
+#center{
+	height: 60px;
+	background-color: #333333;
+}
+#center img{
+	width: 75%;
+	margin:10px 150px;
+}
+.p1{
+	margin: 10px 10px;
+	font-size: 28px;
+	font-weight: bold;
+}
+
+#center2{
+	height: 1200px;
+	width: 100%;
+	background-color: darkslategrey;
+}
+.p02{
+	line-height: 20px;
+	padding: 10px 10px;
+	
+}
+#bottom01{
+	height: 100px;
+	
+}

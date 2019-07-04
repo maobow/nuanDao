@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<script type="text/javascript" src="js/jquery.js" ></script>
+		<link rel="stylesheet" type="text/css" href="commonCss/header.css"/>
+		<link rel="stylesheet" type="text/css" href="commonCss/nav.css"/>
+		<link rel="stylesheet" type="text/css" href="commonCss/bottom.css"/>
+		<link rel="stylesheet" type="text/css" href="commonCss/xinxi.css"/>
+		<link rel="stylesheet" type="text/css" href="css/base.css"/>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		<script type="text/javascript" src="js/goods.js" ></script>
+		<script type="text/javascript" src="js/goods02.js" ></script>
+		
+		<title>暖岛网 | 首页</title>
+	</head>
+	<body>
+		
+		<img id="top" src="img/index/top.png" style="z-index: 99;"/>
+		
+		<header></header>
+		
+		<nav></nav>
+		
+		<div id="picRound" class="t c"></div>
+		
+		<div id="center" class="t">
+			<img class="t" src="img/index/center.png"/>
+		</div>
+		
+		
+		<div id="a">
+			<p class="p1">今日上新</p>
+			<div id="goods01"></div>
+		</div>
+		
+		<div id="b">
+			<p class="p1">本周热卖</p>
+			<div id="goods02"></div>
+			<div id="goods03"></div>
+			<div id="goods04"></div>
+			<div id="goods05"></div>
+		</div>
+		
+			
+		</div>
+			
+		<div id="bottom" class="t"></div>
+		<div class="t" id="bottom01">
+			<p class="p02">使用条款 | 暖岛APP | 友情链接 </p>
+			<p class="p02">北京暖岛网络信息科技有限公司 © 2011-2016 All rights reserved
+			京ICP备13034710号-1 | 京公网安备11010102001819号 
+			执照号：91110108584425669B | 营业执照信息 | 食品经营许可证 </p>
+			<p class="p02">周一至周五9:30-18:00 客服热线：021-50276566 </p>
+			
+		</div>
+		
+		<script>
+			
+			////////////公共类///////////////
+			
+			$('header').load("commonHtml/header.html");
+			$('nav').load("commonHtml/nav.html");
+			$('#picRound').load("commonHtml/lunbo.html");
+			$('#bottom').load("commonHtml/bottom.html");
+			
+			
+			//////////////动态创建数据//////////////
+			
+			$('#goods01').load("commonHtml/xinxi.html");
+			$('#goods02').load("commonHtml/xinxi02.html");
+			$('#goods03').load("commonHtml/xinxi03.html");
+			$('#goods04').load("commonHtml/xinxi04.html");
+			$('#goods05').load("commonHtml/xinxi05.html");
+
+
+			///////////////////回到顶部////////////////
+			
+			//top 点击 scroll = 0
+//			var oTop = document.getElementById('top');
+//			oTop.onclick = function(){
+//				document.documentElement.scrollTop = 0;
+//			}
+			
+			$('#top').click(function() {
+				$('html,body').animate({
+					scrollTop: 0
+				}, 500);
+			})
+			
+			
+			
+		</script>
+	</body>
+</html>

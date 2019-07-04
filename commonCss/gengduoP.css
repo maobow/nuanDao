@@ -1,0 +1,32 @@
+#pBox{
+	width: 95%;
+	height: 500px;
+	/*background-color: yellowgreen;*/
+	margin: 0 auto;
+}
+/*.pImg{
+	width: 1212px;
+	height: 180px;
+	background: orange;
+	margin: 0 auto;
+}*/
+.pPic{
+	width: 150px;
+	height: 150px;
+	margin: 10px 10px;
+}
+#pBox img{
+	display: inline;
+}
+/*.imageList{
+    overflow-x: auto;
+    overflow-y: hidden;
+    height:180px;
+    white-space: nowrap;
+}
+
+.imageList img {
+    width:auto;
+    height:100%;
+    margin-right:10px;
+}*/

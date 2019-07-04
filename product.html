@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>暖岛网 | 商品详情</title>
+		<link rel="stylesheet" type="text/css" href="commonCss/header.css"/>
+		<link rel="stylesheet" type="text/css" href="commonCss/nav.css"/>
+		<link rel="stylesheet" type="text/css" href="commonCss/bottom.css"/>
+		<link rel="stylesheet" type="text/css" href="css/base.css"/>
+		<link rel="stylesheet" type="text/css" href="css/product.css"/>
+		<link rel="stylesheet" type="text/css" href="commonCss/gengduoP.css"/>
+		<script type="text/javascript" src="js/product.js" ></script>
+		<script type="text/javascript" src="js/jquery.js" ></script>
+	</head>
+	<body>
+		<header></header>
+		<nav></nav>
+		
+		
+		<div id="proBox">
+			<p id="title">男装服饰  > 饰品  > 耳饰  > Miss Queeny原创 | 小樱桃 可爱清新天然珍珠纯银耳线</p>
+		
+		<div id="proBox1">
+			<section class="l" id="spic">
+				<img src="img/product/gengduo (3).jpg" id="s"/>
+				<section id="bpic"class="l">
+					<img src="img/product/gengduo (3).jpg" id="b"/>
+				</section>
+			<div id="square"></div>
+			<div id="sPicB">
+				<img src="img/product/gengduo (3).jpg"/>
+			</div>
+
+			</div>
+
+			
+			<div id="proBox02" class="l">
+				<p id="proP">Miss Queeny原创 | 小樱桃 可爱清新天然珍珠纯银耳线</p>
+				<p id="hre"><a href="#">MISSQUEENY奎妮小姐（非自营）</a></p>
+				<p id="proPrice">¥299</p>
+				<p id="says">可爱的小樱桃系列这次增加了金色珠珠与珍珠的组合款，晨露春光里带有金色的凝结，为小樱桃增加了一抹亮光彩，也让这款组合更有搭配性。<a href="#">更多介绍</a></p>
+				
+				
+			<div id="proPic">
+				<span>系列</span>
+				<img src="img/product/xilie (1).jpg"/>
+				<img src="img/product/xilie (2).jpg"/>
+				<img src="img/product/xilie (3).jpg"/>
+				<img src="img/product/xilie (4).jpg"/>
+				<img src="img/product/xilie (5).jpg"/>
+			</div>
+			
+			<div id="proNum">
+				<span>数量</span>
+				<div id="numBox">
+					<input id="sub" type="button" value="-" /> 
+					<input id="num" type="text" value="1" /> 
+					<input id="add" type="button" value="+" /> 
+				</div>
+			</div>
+				<div id="proBtn">
+					<div id="proBtn1" class="l">加入购物车</div>
+					<div id="proBtn2" class="l">立即结算</div>
+					<div id="proBtn3" class="l">在线导购</div>
+					<div id="proBtn4">
+						<img src="img/product/product1.jpg"/>
+					</div>
+				</div>
+			</div>
+		</div>	
+			
+		
+		</div>
+		
+		
+		<p id="like">很喜欢这个商品？猜你也喜欢</p>
+		<div id="guestL" class="t"></div>
+		
+		
+		
+		
+		<div id="xian" class="t"></div>
+		
+		<p id="pMiaoshu">商品描述：</p>
+		<p id="pMiaoshu1">可爱的小樱桃系列这次增加了金色珠珠与珍珠的组合款，晨露春光里带有金色的凝结，为小樱桃增加了一抹亮光彩，也让这款组合更有搭配性。</p>
+		<img id="pProxinxi" src="img/product/pProxinxi.jpg"/>
+		<div id="pPhoto">
+			<img src="img/product/pPic1.jpg"/>
+			<img src="img/product/pPic2.jpg"/>
+		</div>
+
+		<div id="bottom" class="t"></div>
+		<div class="t" id="bottom01">
+			<p class="p02">使用条款 | 暖岛APP | 友情链接 </p>
+			<p class="p02">北京暖岛网络信息科技有限公司 © 2011-2016 All rights reserved
+			京ICP备13034710号-1 | 京公网安备11010102001819号 
+			执照号：91110108584425669B | 营业执照信息 | 食品经营许可证 </p>
+			<p class="p02">周一至周五9:30-18:00 客服热线：021-50276566 </p>
+		</div>
+		
+		
+		<script>
+			////////////公共类///////////////
+			
+			$('header').load("commonHtml/header.html");
+			$('nav').load("commonHtml/nav.html");
+			$('#bottom').load("commonHtml/bottom.html");	
+			$('#guestL').load("commonHtml/gengduoP.html");	
+			
+			////////////放大镜效果///////////////
+			
+			$('#spic').mousemove(function(event){
+				//console.log( event.clientX,event.clientY )
+				//console.log( $('#spic').offset().left,$('#spic').offset().top)
+				var nowleft = Math.floor(event.pageX - $('#spic').offset().left)-50;
+				var nowtop  = event.pageY - $('#spic').offset().top-50;
+				console.log( nowleft,nowtop )
+				console.log( event.clientY ,$('#spic').offset().top )
+				
+ 				if(nowleft<0){
+ 					nowleft = 0 ;
+ 				}
+ 				if(nowleft>300){
+ 					nowleft = 300 ;
+ 				}				
+ 				if(nowtop<0){
+ 					nowtop = 0 ;
+ 				}				
+ 				if(nowtop>300){
+ 					nowtop = 300 ;
+ 				}				
+				
+ 				$('#square').css({
+ 					'top':nowtop,
+ 					'left':nowleft
+ 				})
+ 				$('#b').css({
+ 					'top':-nowtop*3,
+ 					'left':-nowleft*3
+ 				})				
+				
+				
+			})
+			
+			
+			////////////商品数量加减///////////////
+			
+			$(document).ready(function(){
+			//获得文本框对象
+			var t = $("#num");
+			//初始化数量为1,并失效减
+			$('#sub').attr('disabled',true);
+			//数量增加操作
+			$("#add").click(function(){
+				// 给获取的val加上绝对值，避免出现负数
+				t.val(Math.abs(parseInt(t.val()))+1);
+				if (parseInt(t.val())!=1){
+					$('#sub').attr('disabled',false);
+				};
+			})
+			//数量减少操作
+			$("#sub").click(function(){
+				t.val(Math.abs(parseInt(t.val()))-1);
+				if (parseInt(t.val())==1){
+					$('#sub').attr('disabled',true);
+				};
+			})
+		});
+			
+			
+		</script>
+	</body>
+</html>

@@ -1,0 +1,95 @@
+#head{
+	background-color: #333333;
+	height: 45px;
+	overflow: hidden;
+}
+#logo{
+	height: 45px;
+	width: 90px;
+	/*background-color: red;*/
+	margin-left: 10px;
+	
+}
+#logo img{
+	height: 45px;
+}
+#search1{
+	width: 350px;
+	height: 45px;
+	/*background-color: aqua;*/
+	margin: 0px 30px;
+	overflow: hidden;
+}
+#search1 img{
+	width: 29px;
+	height: 37.5px;
+	margin: 4px 0;
+}
+
+#inp{
+	margin: 4px 0;
+	width: 320px;
+	height: 37px;
+	/*background: red;*/
+}
+#inp1{
+	margin: .5px 0;
+	width: 320px;
+	height: 36px;
+	outline: none;
+	border: 0;
+	font-size: 16px;
+}
+#fonts{
+	margin-left: -10px;
+}
+.btns{
+	margin: 0 5px;
+	line-height: 43px;
+	color: #E396FF;
+	font-size: 13px;
+}
+#car{
+	width: 25px;
+	height: 25px;
+	margin: 8px auto;
+}
+
+#right li span{
+	font-size: 14px;
+	color: white;
+}
+#car1{
+	width: 18px;
+	height: 18px;
+	margin: 12px auto;
+	margin-right: 10px;
+}
+#font{
+	color: white;
+	line-height: 40px;
+	margin-right: 6px;
+	margin-left: 6px;
+}
+#font1 a{
+	color: white;
+	line-height: 44px;
+	border: 1px solid white;
+	margin-left: 10px;
+	padding: 3px;
+	text-decoration: none;
+}
+
+#weibo{
+	width: 55%;
+	margin-top: 0px;
+	margin-left: 20px;
+}
+#left{
+	overflow: hidden;
+}
+#right{
+	overflow: hidden;
+}
+
+

@@ -1,0 +1,224 @@
+#head{
+	background-color: #333333;
+	height: 45px;
+	overflow: hidden;
+}
+#logo{
+	height: 45px;
+	width: 90px;
+	/*background-color: red;*/
+	margin-left: 10px;
+	
+}
+#logo img{
+	height: 45px;
+}
+body{
+	background-image: url(../img/login/bg.jpg);
+}
+#login{
+	width:700px;
+	height: 500px;
+	background-color: white;
+	margin: 20px auto;
+	
+}
+#loginl{
+	width: 320px;
+	height: 470px;
+	/*background-color: green;*/
+	
+	margin-top: 15px;
+	margin-left: 30px;
+}
+#loginr{
+	width: 320px;
+	height: 470px;
+	/*background-color: palegoldenrod;*/
+	margin-top: 15px;
+	margin-left: 10px;
+	border-left: solid 1px gainsboro;
+
+}
+#title1{
+	font-size: 20px;
+	text-align: center;
+}
+#title2{
+	font-size: 16px;
+	text-align: center;
+	color: gray;
+	position: relative;
+	display: block;  
+	margin-top: 15px;
+}
+#title2:before, #title2:after { 
+    content: ''; 
+    position: absolute;   /*定位背景横线的位置*/
+    top: 50%; 
+    background: gray;   /*背景横线颜色*/
+    width: 25%;            /*单侧横线的长度*/
+    height: 1.5px; 
+} 
+#title2:before { 
+    left: 1px;              /*调整背景横线的左右距离*/
+} 
+
+#title2:after { 
+    right: 1px; 
+}
+#login img{
+	margin: 20px 25px;
+	/*margin-top: 10px;*/
+}
+#title4{
+	font-size: 16px;
+	text-align: center;
+	color: darkgray;
+	
+}
+.p02{
+	line-height: 20px;
+	padding: 10px 10px;
+	
+}
+
+#loginl03{
+	/*background-color: #98FB98;*/
+	height: 50px;
+	width: 300px;
+	margin: 20px auto;
+	text-align: center;
+	line-height: 50px;
+}
+#title301{
+	font-size: 20px;
+}
+#title302{
+	font-size: 35px;
+	font-weight: bold;
+}
+.title03{
+	color: deeppink;
+	text-shadow:
+				0 0 2px #fff,
+				0 0 5px #fff, 
+				0 0 7px #fff,
+				0 0 12px #fff, 
+				0 0 15px deeppink, 
+				0 0 18px deeppink, 
+				0 0 20px deeppink, 
+				0 0 22px deeppink, 
+				0 0 24px deeppink;
+
+}
+
+#rp{
+	/*background: pink;*/
+	width: 260px;
+	height: 45px;
+	margin: 0 auto;
+	margin-top: 10px;
+}
+#rp span{
+	font-size: 16px;
+}
+.r1{
+	color: black;
+}
+.r2{
+	color: grey;
+}
+#rp1{
+	/*background: orange;*/
+	width: 260px;
+	height: 38px;
+	margin: 5px auto;
+	position: relative;
+	border: solid 1px gainsboro;
+}
+.tis{
+	color: white;
+	margin: 0 30px;
+}
+
+/*#inpimg{
+	height: 35px;
+	width: 35px;
+	background-color: chocolate;
+	
+	
+}*/
+.inp1{
+	width: 221px;
+	height: 34px;
+	outline: none;
+	border: 0;
+}
+#inpimg img{
+	width: 33px;
+	height: 34px;
+	position: absolute;
+	top:-18px;
+	left: -22px;
+}
+#inp{
+	height: 35px;
+	width: 222px;
+	/*background: cadetblue;*/
+	position: absolute;
+	top:2px;
+	left: 35px;
+}
+#forgot{
+	/*background: red;*/
+	width: 260px;
+	height: 20px;
+	margin: 0 auto;
+	color: grey;
+}
+#btn{
+	height: 40px;
+	width: 260px;
+	background: lightseagreen;
+	margin: 15px auto;
+	text-align: center;
+	font-size: 18px;
+	line-height: 40px;
+	color: white;
+}
+
+#btn1{
+	height: 40px;
+	width: 260px;
+	border: solid 1px red;
+	margin: 15px auto;
+	text-align: center;
+	font-size: 18px;
+	line-height: 40px;
+	color: red;
+}
+
+#list{
+	/*background: red;*/
+	width: 260px;
+	height: 20px;
+	margin: 15px auto;
+	color: grey;
+}
+#more img{
+	width: 100%;
+	/*height: 40px;*/
+	margin: 2px auto;
+}
+#more{
+	width: 260px;
+	height: 45px;
+	/*background-color: yellow;*/
+	margin: 0 30px;
+}
+#bottom01{
+	height: 120px;
+	background-color: white;
+	margin-bottom: 0;
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript" src="js/jquery.js" ></script>
+		<script type="text/javascript" src="js/goods02.js" ></script>
+		<link rel="stylesheet" type="text/css" href="css/base.css"/>
+		<link rel="stylesheet" type="text/css" href="commonCss/xinxi04.css"/>
+	</head>
+		<div id="gBox04">
+			<!--<div class="goods">
+				<div class="gimg">
+					<img src="../img/xinxi/xinxi1.jpg" class="gPic"/>
+					<div id="fbox">
+						<span class="gname">果壳量子积木</span>
+					</div>
+				</div>
+					<p class="gInf">献给超龄儿童，永远18岁</p>
+			
+			</div>-->
+		</div>
+	
+		
+		
+		<script>
+		    //window.onload
+			$(function(){
+				console.log(srr1)
+				$.each(srr1,function(index,data){
+					console.log(data)
+					var str=`
+								<div class="goods">
+								<div class="gimg">
+									<img src="${data.src}" class="gPic"/>
+									<div id="fbox01">
+										<span>${data.name}</span>
+									</div>
+								</div>
+								<p class="gInf">${data.inf}</p>
+								</div>
+							`;
+						
+				$('#gBox04').append(str);
+				});
+			})
+		</script>
+	</body>
+</html>

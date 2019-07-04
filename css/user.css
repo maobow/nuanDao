@@ -1,0 +1,99 @@
+#head{
+	background-color: #333333;
+	height: 45px;
+	overflow: hidden;
+}
+#logo{
+	height: 45px;
+	width: 90px;
+	/*background-color: red;*/
+	margin-left: 10px;
+	
+}
+#logo img{
+	height: 45px;
+}
+#head1{
+	height: 170px;
+	width: 100%;
+	background-color: #f2f2f2;
+	border-bottom: 1px solid lightgrey;
+	position: relative;
+}
+#hp{
+	font-size: 16px;
+	position: absolute;
+	/*background-color: rosybrown;*/
+	left: 180px;
+	top: 30px;
+}
+#l01{
+	/*background-color: cadetblue;*/
+	width: 27%;
+	height: 1300px;
+	border-right: lightgrey 1px solid;
+	
+}
+#r01{
+	/*background-color: green;*/
+	width: 72%;
+	height: 1300px;
+}
+.lists{
+	/*background: darkgoldenrod;*/
+	width: 160px;
+	height: 240px;
+	border-bottom: gainsboro 1px solid;
+}
+.p0{
+	font-size: 14px;
+	/*background-color: brown;*/
+	margin-bottom: 10px;
+	color: gray;
+	margin-top: 20px;
+}
+.p1{
+	width: 145px;
+	height: 200px;
+	/*background-color: burlywood;*/
+	font-size: 14px;
+}
+.p1 p{
+	padding: 10px 0;
+	color: gray;
+}
+#p3{
+	font-size: 14px;
+	margin-bottom: 20px;
+}
+#p4{
+	font-size: 14px;
+	color: grey;
+	line-height: 25px;
+}
+#ppp{
+	margin-right: 90px;
+	margin-left: 50px;
+	margin-top: 100px;
+}
+
+
+
+
+
+
+
+
+
+
+.p02{
+	line-height: 20px;
+	padding: 10px 10px;
+	
+}
+#bottom01{
+	height: 120px;
+	background-color: white;
+	margin-bottom: 0;
+}
+

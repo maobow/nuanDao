@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript" src="js/jquery.js" ></script>
+		<script type="text/javascript" src="js/liebiao.js" ></script>
+		<link rel="stylesheet" href="css/base.css" />
+		<link rel="stylesheet" type="text/css" href="css/goodsInf.css"/>
+		
+	</head>
+	<body>
+		<div id="goodsCenter">
+			<!--<div id="goodsPic">
+				<img src="img/liebiao/liebiao (1).jpg" class="l"/>
+				<div id="infPBox">
+					<p id="infTitle">鑫易轩 双戒S925银锆石吊坠项链</p>
+					<p id="infPrice">￥152</p>
+				</div>-->
+			</div>
+		</div>
+		
+		
+		
+		
+		<script>
+			//window.onload
+			$(function(){
+				console.log(srr3)
+				$.each(srr3,function(index,data){
+					console.log(data)
+					var str=`
+								<div id="goodsPic" class="l">
+									<img src="${data.src}"/">
+									<div id="infPBox">
+										<p id="infTitle">${data.name}</p>
+										<p id="infPrice">${data.price}</p>
+									</div>
+								</div>
+							`;
+				$('#goodsCenter').append(str);
+				});
+			})
+			
+			
+		</script>
+	</body>
+</html>

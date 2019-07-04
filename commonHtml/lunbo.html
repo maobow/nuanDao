@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript" src="js/jquery.js" ></script>
+	</head>
+	<style type="text/css">
+		* {
+			padding:0;
+			margin:0;
+			}
+		ul {
+			list-style:none;
+			}
+		.out {
+			width:1263px;
+			height:400px;
+			margin:0px auto;
+			position:relative;
+			}
+		.img li {
+			position:absolute;
+			top:0px;
+			left:0px;
+			display:none
+			}
+		.out .num {
+			position:absolute;
+			bottom:0px;
+			left:0px;
+			font-size:0px;
+			text-align:center;
+			width:100%;
+		}
+		.num li {
+			width:20px;
+			height:20px;
+			background:#666666;
+			color:#FFFFFF;
+			text-align:center;
+			line-height:20px;
+			display:inline-block;
+			font-size:16px;
+			border-radius:50%;
+			margin-right:10px;
+			cursor:pointer;
+		}
+		.out .btn {
+			position:absolute;
+			top:50%;
+			margin-top:-30px;
+			width:30px;
+			height:60px;
+			background:rgba(0,0,0,0.5);
+			color:#FFFFFF;
+			text-align:center;
+			line-height:60px;
+			font-size:40px;
+			display:none;
+			cursor:pointer;
+		}
+		.out .num li.active-1 {
+			background:#AA0000;
+		}
+		.out:hover .btn {
+			display:block
+		}
+		.out .left {
+			left:0px;
+		}
+		.out .right {
+			right:0px;
+		}
+
+	</style>
+	<body>
+		<div class="out">
+			<ul class="img">
+				<li><a href=""><img src="img/youhuo/1.jpg" alt="" width="1263px" height="400"></a></li>
+			    <li><a href=""><img src="img/youhuo/2.jpg" alt="" width="1263px" height="400"></a></li>
+			    <li><a href=""><img src="img/youhuo/3.jpg" alt="" width="1263px" height="400"></a></li>
+			    <li><a href=""><img src="img/youhuo/4.jpg" alt="" width="1263px" height="400"></a></li>
+			    <li><a href=""><img src="img/youhuo/5.jpg" alt="" width="1263px" height="400"></a></li>
+  			</ul>
+  
+ 			<ul class="num"></ul>
+ 			<div class="left btn">&lt;</div>
+  			<div class="right btn">&gt;</div>
+		</div>
+		
+		<script>
+			$(function(){
+				//下方for循环
+				var size=$(".img li").size()
+				for(var i=1; i<=size; i++){
+				var li="<li>"+i+"</li>";
+				$(".num").append(li)
+				}
+				/*size  获取当前元素个数*/
+				//手动控制轮播
+				$(".img li").eq(0).show()
+				$(".num li").eq(0).addClass('active-1')
+				/*mouseover  可以改成点击事件  click*/
+				$(".num li").mouseover(function(){
+				$(this).addClass('active-1').siblings('li').removeClass('active-1')
+				var index=$(this).index()  /*index  当前元素的意思索引值*/
+				i=index; //i值和自动轮播值是相同的
+				$(".img li").eq(index).stop().fadeIn(/*淡入*/).siblings().stop().fadeOut(/*淡出*/)		
+				/*eq 0开始*/
+			});
+			//自控制轮播
+			var i=0;
+			var t=setInterval(move,3000)	//定时器
+			//右
+			function move(){
+				i++;
+				if(i==size){i=0;}
+				$(".num li").eq(i).addClass('active-1').siblings('li').removeClass('active-1');
+				$(".img li").eq(i).fadeIn().siblings().fadeOut();
+			};
+			//左
+			function moveL(){
+				i--;
+				if(i==-1){i=size-1;}
+				$(".num li").eq(i).addClass('active-1').siblings('li').removeClass('active-1');
+				$(".img li").eq(i).fadeIn().siblings().fadeOut();
+			}; 
+			//自动轮播鼠标经过移入和移除
+			$(".out").hover(function(){
+				clearInterval(t)
+			},function(){
+				t=setInterval(move,3000)
+			});
+			//左右按钮
+			$(".out .left").click(function(){
+				moveL()
+			})
+			$(".out .right").click(function(){
+				move()
+			})
+			});
+		</script>
+	</body>
+</html>

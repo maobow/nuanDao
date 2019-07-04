@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>暖岛网 | 登录注册</title>
+		<link rel="stylesheet" type="text/css" href="css/base.css"/>
+		<link rel="stylesheet" type="text/css" href="css/login.css"/>
+		<script type="text/javascript" src="js/jquery.js" ></script>
+	</head>
+	<body>
+		<div id="head" class="t">
+			<div id="logo" class="l">
+				<img src="img/header/logo.png"/>
+			</div>
+		</div>
+		
+		<div id="login">
+			<div id="loginl" class="l">
+				<p id="title1">中国具有创造力的设计电商</p>
+				<p id="title2">让最好的一切发生</p>
+				<div id="loginl03">
+					<span id="title301" class="title03">注册就送</span>
+					<span id="title302" class="title03">100元</span>
+					<span id="title301" class="title03">现金券</span>
+				</div>
+				
+				<img src="img/login/login.gif"/>
+				<p id="title4">每日全球设计新品 2折起包邮+赠券特卖</p>
+			</div>
+			
+			
+			
+			
+			
+			
+			<div id="loginr" class="l">
+				<div id="rp">
+					<span class="r1">登录</span><span class="r2"> | 注册</span>
+				</div>
+				
+				<div id="rp1">
+					<div id="inpimg">
+						<img src="img/login/input1.png" class="l"/>
+					</div>
+					<div id="inp">
+						<input type="text" class="inp1 l" placeholder="邮箱地址"/>
+					</div>
+				</div>
+				
+				<div class="tis">
+						<p>请输入邮箱</p>
+				</div>
+				
+				
+				<div id="rp1">
+					<div id="inpimg">
+						<img src="img/login/input2.png" class="l"/>
+					</div>
+					<div id="inp">
+						<input type="text" class="inp1 l" placeholder="暖岛密码"/>
+					</div>
+					
+				</div>
+				
+				<div class="tis">
+						<p>请输入密码</p>
+				</div>
+					
+				<div id="forgot">
+					<p class="r">忘记密码</p>
+				</div>
+				
+				<div id="btn">
+					登录暖岛
+				</div>
+				
+				<div id="forgot">
+					<p>其他登录方式：</p>
+				</div>
+				
+				<div id="btn1">
+					微博登录
+				</div>
+				<div id="forgot">
+					<p class="r" id="more0">更多 ▼ </p>
+				</div>
+				<div id="more">
+					<img src="img/login/indexmore.png"/>
+				</div>
+				<div id="list">
+					<span>注册登录暖岛后，您已同意<span><u>用户使用条款</u></span></span>
+				</div>
+				
+			</div>
+		</div>
+		
+		
+		<div class="t" id="bottom01">
+			<p class="p02">使用条款 | 暖岛APP | 友情链接 </p>
+			<p class="p02">北京暖岛网络信息科技有限公司 © 2011-2016 All rights reserved
+			京ICP备13034710号-1 | 京公网安备11010102001819号 
+			执照号：91110108584425669B | 营业执照信息 | 食品经营许可证 </p>
+			<p class="p02">周一至周五9:30-18:00 客服热线：021-50276566 </p>
+
+		</div>
+		
+		<script>
+			
+			////////////表单验证//////////////
+			
+			//01. 布局
+			//02. input  blur是焦点
+			//   正则表达式 reg
+			//    正则表达式验证 方法       reg.test    input value
+			$('.inp1').blur(function(){
+				//取到input的value值，用.val()
+				//取索引值
+				var index = $('.inp1').index(this);
+				var value = $('.inp1').eq(index).val();
+				var reg;
+				switch(index){
+					case 0:
+						reg=/^\d{5,11}@qq.com$/;
+						break;
+					case 1:
+						reg=/^\w{6,12}$/;
+						break;
+				}
+
+
+				checked(reg,value,index);
+			})
+			
+			
+			///////////////提示///////////////
+			
+			function checked(reg,value,index){
+				var result = reg.test(value);
+				console.log(value,result,reg);				
+				if(result==false){
+					$('.tis').eq(index).css('color','red');
+				}else{
+					$('.tis').eq(index).css('color','white');
+				}
+			}
+			
+			
+			/////////////点击更多/////////////
+			
+			$(document).ready(function(){
+  				$("#more0").click(function(){
+  				$("#more").toggle();
+  					});
+			});
+			
+			
+			
+			
+			///////////////改变样式//////////////
+			
+			var flag1 = false;
+				$('.r2').on('click', function() {
+    				flag1 = !flag1;
+    				$('#btn').text(flag1 ? '注册暖岛' : '登录暖岛');
+				});
+			var flag2 = false;
+				$('.r1').on('click', function() {
+    				flag2 = !flag2;
+    				$('#btn').text(flag2 ? '登录暖岛' : '注册暖岛');
+				});
+				
+		</script>
+	</body>
+</html>

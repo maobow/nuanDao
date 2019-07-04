@@ -1,0 +1,45 @@
+#xian1{
+	height: 2px;
+	background-color: darkgrey;
+	margin: 20px 0;
+}
+#goodsCenter{
+	width: 100%;
+	height: 320px;
+	/*background-color: orange;*/
+}
+#goodsPic img{
+	width:240px;
+	height: 240px;
+	display: block;
+	margin-left: 10px;
+}
+#infTitle{
+	font-size: 14px;
+	margin-top: 10px;
+	margin-left: 10px;
+}
+#infPrice{
+	color: lightseagreen;
+	margin-top: 10px;
+	margin-left: 10px;
+}
+#infPBox{
+	width:240px;
+	line-height: 18px;
+}
+
+
+
+
+
+
+
+
+.p02{
+	line-height: 20px;
+	padding: 10px 10px;
+}
+#bottom01{
+	height: 100px;
+}

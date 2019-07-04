@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript" src="js/jquery.js" ></script>
+		<script type="text/javascript" src="js/product.js" ></script>
+		<link rel="stylesheet" type="text/css" href="css/base.css"/>
+		<link rel="stylesheet" type="text/css" href="commonCss/gengduoP.css"/>
+		
+		<style>
+			
+		</style>
+	</head>
+		<div id="pBox">
+				<!--<div class="pImg">
+					<img src="img/product/gengduo (1).jpg" class="pPic l"/>
+					<img src="img/product/gengduo (2).jpg" class="pPic l"/>
+					<img src="img/product/gengduo (3).jpg" class="pPic l"/>
+					<img src="img/product/gengduo (4).jpg" class="pPic l"/>
+					<img src="img/product/gengduo (5).jpg" class="pPic l"/>
+					<img src="img/product/gengduo (6).jpg" class="pPic l"/>
+					<img src="img/product/gengduo (7).jpg" class="pPic l"/>
+				</div>-->
+		</div>
+	
+		<script>
+		    //window.onload
+			$(function(){
+				console.log(srr2)
+				$.each(srr2,function(index,data){
+					console.log(data)
+					var str=`<img src="${data.src}" class="pPic l"/>
+							 <img src="${data.src}" class="pPic l"/>
+							 <img src="${data.src}" class="pPic l"/>
+							`;
+				$('#pBox').append(str);
+				});
+			})
+		</script>
+	</body>
+</html>
